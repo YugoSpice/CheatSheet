@@ -52,7 +52,7 @@
   }
 </style>
 
-<h2>Beand/Pulses</h2>
+<h2>Beans/Pulses</h2>
 <div class="so-accordion-wrapper">
   <div class="so-tab">
     <input id="so-tab-1" type="checkbox" name="tabs" />
