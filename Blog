@@ -1,0 +1,406 @@
+<!-- Begin Accordion Snippet -->
+<style>
+  .so-tab {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 25px 0;
+  }
+  .so-tab label {
+    position: relative;
+    display: block;
+    padding: 0 25px 0 0;
+    margin-bottom: 15px;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .so-tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .so-tab-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s;
+  }
+  /* :checked */
+  .so-tab input:checked ~ .so-tab-content {
+    max-height: none;
+  }
+  /* Icon */
+  .so-tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  .so-tab input[type=checkbox] + label::after {
+    content: "+";
+  }
+  .so-tab input[type=radio] + label::after {
+    content: "\25BC";
+  }
+  .so-tab input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+  }
+  .so-tab input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+  }
+</style>
+
+<h2>Beand/Pulses</h2>
+<div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-1" type="checkbox" name="tabs" />
+    <label for="so-tab-1">Black/Kidney/Pinto Beans</label>
+    <div class="so-tab-content">
+      <p>Miso Chilli: Cook some mince with finely diced onions and carrots. Add your beans, some tinned tomatoes, and a few spoonfuls of Miso Chipotle. Simmer.</p>
+      <br>
+      <p>Saucy veg and beans: Mix cooked beans with any cooked veg you have (diced) with some Miso Chipotle. Use this to top rice, pasta, or noodles.</p>
+            <br>
+      <p>Quesadilla or cheese toastie: Use the above and mix this with some grated cheese to make a quesadilla or toastie.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-2" type="checkbox" name="tabs" />
+    <label for="so-tab-2">Chickpeas</label>
+    <div class="so-tab-content">
+      <p>Chana Masala: Make a really simple chickpea curry with our recipe here. Serve with rice (or any other grain you have) or scoop up with some bread (it doesn’t have to be naan). Also look at the section for white beans, as it’s also applicable to chickpeas.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-3" type="checkbox" name="tabs" />
+    <label for="so-tab-3">White Beans (Any Kind)</label>
+    <div class="so-tab-content">
+      <p>Saucy beans: in a blender, blend an onion, a tomato, two red peppers, and three tablespoons of Curried Sun-Dried Tomato to form a paste. Cook this over medium heat for a few minutes until fragrant and add your cooked beans. Add water if necessary and let simmer on the lowest heat setting for at least half an hour (the longer the better). Serve over toast with a fried egg or use to top pasta or rice.</p>     
+      <br>
+      <p>Curried Chilli: Cook some mince with finely diced onions, carrots, and a few heaped spoons of Curried Sun-Dried Tomato. Add your beans, some tinned tomatoes, and simmer.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-4" type="checkbox" name="tabs" />
+    <label for="so-tab-4">Puy Lentils/Lentilles vertes</label>
+    <div class="so-tab-content">
+      <p>Lentil Salad: Mix cold cooked lentils with any other veg or grains you have. Salt and dress with olive oil and Chipotle Garni for a fresh and protein-packed salad.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-5" type="checkbox" name="tabs" />
+    <label for="so-tab-5">Red split lentils/yellow split peas</label>
+    <div class="so-tab-content">
+      <p>Curried Lentil Soup: Cook these with some roughly sliced carrots and a small diced potato (follow package instructions for the lentils on how long to cook them, but make sure there’s enough water to cover everything). Towards the end, mix in some Curried Sun-Dried Tomato and blitz everything in the blender to make a curried lentil soup.</p>
+      <br>
+      <p>Turkish Lentil Balls (Mercimek Koftesi): This is delicious, uses (mostly) simple ingredients, and is super fresh. This is the simplest recipe we could find. In the absence of Turkish red pepper paste, omit the tomato paste from the recipe as well and use 3 tablespoons of Curried Sun-Dried Tomato instead.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-6" type="checkbox" name="tabs" />
+    <label for="so-tab-6">Hummus and Falafel</label>
+    <div class="so-tab-content">
+      <p>Ultimate Veggie Wrap: Slather your wrap with hummus, or top with falafel (or both!) and top with Chipotle Garni. Add crunchy veg for a little something extra. Example here.</p>
+    </div>
+  </div>
+   <div class="so-tab">
+    <input id="so-tab-42" type="checkbox" name="tabs" />
+    <label for="so-tab-42">Tofu</label>
+    <div class="so-tab-content">
+      <p>Crispy Tofu: Detailed instructions here. Mix with some Miso Chipotle or Chipotle Garni and a little extra oil before the final 10 minutes in the oven for a lot of extra flavour. Add these to stir-fries or use them in salads or to top grain bowls or noodles.</p>
+    </div>
+  </div>
+  </div>
+
+<h2>Fresh/Frozen Veg</h2>
+<div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-7" type="checkbox" name="tabs" />
+    <label for="so-tab-7">Aubergine</label>
+    <div class="so-tab-content">
+      <p>Aubergine Bowl: Dice and toss with some Miso Chipotle and olive oil before roasting. If cooking from frozen, this can be done on the hob. Serve with rice or noodles + fried egg.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-8" type="checkbox" name="tabs" />
+    <label for="so-tab-8">Broccoli</label>
+    <div class="so-tab-content">
+      <p>Chargrilled Broccoli: Cut your broccoli into florets and blanch for two minutes. You can cool the broccoli in an ice bath after blanching, but if we’re being honest, rinsing it with cold water will probably do and is easier. Coat in some olive oil, and place the broccoli on an extremely hot griddle pan in batches (don’t crowd the florets or they’ll steam), and flip them so they have char marks on both sides. Toss them in some Chipotle Garni. This makes for a great side dish, or a lovely addition to a grain or lentil salad (see the Beans/Pulses section, and the Rice/Grains/Pasta sections).</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-9" type="checkbox" name="tabs" />
+    <label for="so-tab-9">Cabbage</label>
+    <div class="so-tab-content">
+      <p>Japanese cabbage pancakes (Okonomiyaki): These are delicious, and easily adaptable to what you have. This was the simplest recipe we could find. In the absence of traditional toppings, we usually drizzle ours with a load of Miso Chipotle Mayo (just mayo with a few teaspoons of Miso Chipotle).</p>
+      <br>
+      <p>Simple Slaw Two Ways: Mix shredded cabbage and grated carrots with some Miso Chipotle mayo. This is just Miso Chipotle mixed in with mayo, using as much or as little as you like to suit your taste. You can also sub yoghurt for mayo for something lighter.  Alternatively, you can dress it with a mix of olive oil and Chipotle Garni for a fresher slaw.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-10" type="checkbox" name="tabs" />
+    <label for="so-tab-10">Carrots</label>
+    <div class="so-tab-content">
+      <p>Miso Glazed Carrots: Toss with some Miso Chipotle and oil before roasting for an amazingly delicious side dish. This can also be a great addition to a grain or lentil salad (see the sections for Beans/Pulses and Rice/Grains/Pasta for the relevant recipes).</p>
+      <br>
+      <p>Japanese Cabbage Pancake: See the section for cabbage, as carrots can be added to the recipe (or even possibly replace the cabbage entirely).</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-11" type="checkbox" name="tabs" />
+    <label for="so-tab-11">Cauliflower</label>
+    <div class="so-tab-content">
+      <p>Roast Cauliflower: Toss with Curried-Sun Dried Tomato and roast for an easy side dish, or for a wonderful addition to a grain or lentil salad (see the sections for beans/pulses and rice/grains/ pasta for the relevant recipes).</p>
+      <br>
+      <p>Curried Cauliflower Salad: Toss roasted cauliflower in a mixture of yoghurt, Curried Sun-Dried Tomato and lemon juice, and top with nuts such as pistachio, and raisins.</p>
+      <br>
+      <p>Curry: Incorporate into a curry (you can use our chickpea curry recipe and use cauliflower instead, just be sure to adjust the cooking time for the cauliflower to fully cook).</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-12" type="checkbox" name="tabs" />
+    <label for="so-tab-12">Courgette</label>
+    <div class="so-tab-content">
+      <p>Courgette Corn Tacos: Slicing your courgettes into rounds, toss with some olive oil and Chipotle Garni to coat. Spread on a parchment-lined baking tray and transfer to your preheated oven (we roast ours at 200 degrees for 15 minutes on each side). Toss your frozen corn in the same bowl, tossing with a little more olive oil. When your courgettes are ready to flip, add the corn and roast for the last 15 minutes. Use this as a filling for tacos or to have with rice, and top with sliced avocado, soft cheese, and a squeeze of lime.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-13" type="checkbox" name="tabs" />
+    <label for="so-tab-13">Leafy Greens</label>
+    <div class="so-tab-content">
+      <p>Coconut Curried Greens: In a hot pan with some coconut (or neutral) oil, sauté a diced shallot (or small onion), a minced clove of garlic, and some grated ginger. Once softened, add Curried Sun-Dried Tomato and cook until fragrant. Add your greens and cook until tender (but not mushy). Add some coconut milk, stir to combine, and cook for a further 2-3 minutes. Serve over rice.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-14" type="checkbox" name="tabs" />
+    <label for="so-tab-14">Mushrooms</label>
+    <div class="so-tab-content">
+      <p>Stir-fry: fry with other veg and Miso Chipotle and use to top some rice or noodles.</p>
+      <br>
+      <p>Stuffed Mushrooms: You can stuff larger ones with a medley of cooked veg mixed with Curried Sun-Dried Tomato, topped with cheese, and bake until the mushrooms are cooked, and the cheese is melty. </p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-15" type="checkbox" name="tabs" />
+    <label for="so-tab-15">Parsnips</label>
+    <div class="so-tab-content">
+      <p>Smokey Parsnip Soup: Sautee a diced onion and add equal amounts of coarsely chopped parsnips and carrots. Add enough vegetable broth to cover and bring to a boil. Mix in a few tablespoons of Miso Chipotle and reduce heat to a simmer. Once the veg is cooked, blend until you reach your desired consistency.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-16" type="checkbox" name="tabs" />
+    <label for="so-tab-16">Peas</label>
+    <div class="so-tab-content">
+      <p>Baked Pea Kachori: Pea kachori are usually deep fried, but in this recipe they’re baked which is easier and makes for a healthier treat. The dough is fairly easy to make, but for an even easier recipe that won’t use up your precious flour, we’ve found pizza dough works just fine. We like this one. If you haven’t got all the spices handy, you can substitute the spices and oil in the recipe for two tablespoons of Curried Sun-Dried Tomato.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-17" type="checkbox" name="tabs" />
+    <label for="so-tab-17">Peppers</label>
+    <div class="so-tab-content">
+      <p>Stuffed Peppers: Cook rice as instructed in the Rice/Grains/Pasta section, and stuff the peppers with that before roasting until the peppers are cooked. Feel free to top with cheese if you have it.</p>
+      <br>
+      <p>Stir-fry: Slice them and stir-fry with other veg and Miso Chipotle and top your rice/noodles with it.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-18" type="checkbox" name="tabs" />
+    <label for="so-tab-18">Potatoes</label>
+    <div class="so-tab-content">
+      <p>Roast Potato Bowl: Dice and roast with some Curried Sun-Dried Tomato. Top with a fried egg, cooked beans/protein if you have them, and chutney/yoghurt if you have it.</p>
+      <br>
+      <p>Gnocchi: See the recipe idea for Gnocchi under the Rice/Grains/Pasta section for instructions on how to make your leftover mash and a bit of flour into a delicious and addictive gnocchi.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-19" type="checkbox" name="tabs" />
+    <label for="so-tab-19">Sweet Potatoes</label>
+    <div class="so-tab-content">
+      <p>Simple Hash Browns: Grate your sweet potatoes, and in a heavy bottomed pan on high heat add two tablespoons of butter or ghee (make sure the pan is as hot as it can go without burning the butter). Scoop large spoonfuls of the potatoes onto the pan and flatten. Cook, undisturbed, for 4-5 minutes on each side until crispy. This is phenomenal with a fried or poached egg on top with a lot of Chipotle Garni to cut the sweetness.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-20" type="checkbox" name="tabs" />
+    <label for="so-tab-20">Sweetcorn</label>
+    <div class="so-tab-content">
+      <p>Easy Corn Fritters: Corn fritters are not only addictive, they’re also easy to make. Follow the recipe here. We like ours with copious amounts of Chipotle Garni.</p>
+    </div>
+  </div>
+</div>
+
+
+<h2>Rice/Grains/Pasta</h2>
+<div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-21" type="checkbox" name="tabs" />
+    <label for="so-tab-21">Rice</label>
+    <div class="so-tab-content">
+      <p>Curried Rice Pilaf: Toast your rice with some Curried Sun-Dried Tomato, then add water (as per the package instructions) to cook the rice. Mix in some frozen/cooked veg or cooked beans towards the end and serve once they’re heated through. Frozen peas work particularly well in this.</p>
+      <br>
+      <p>Makeshift Bibimbap: slice vegetables into matchsticks (commonly these are carrots, mushrooms, spinach, courgettes, and beansprouts, but feel free to use whatever you have!) and cook with a touch of sesame oil if you have it. If you’re adding protein, you can use tofu, or any thinly sliced meat, cooked with a touch of sesame oil as well. Serve over leftover rice, and top with a fried egg, and a healthy drizzle of Miso Chipotle.</p>
+    </div>
+  </div>
+    <div class="so-tab">
+    <input id="so-tab-22" type="checkbox" name="tabs" />
+    <label for="so-tab-22">Cous cous/buckwheat/pearl barley/farro/quinoa/farro</label>
+    <div class="so-tab-content">
+      <p>Grain Salad: Mix cold (cooked) grains with any beans/lentils, nuts, seeds, salad veg, olives, soft cheese or stone/citrus fruit you have (make sure to chop all of these into small pieces), and dress with some olive oil and Chipotle Garni.</p>
+    </div>
+  </div>
+    <div class="so-tab">
+    <input id="so-tab-23" type="checkbox" name="tabs" />
+    <label for="so-tab-23">Risotto</label>
+    <div class="so-tab-content">
+      <p>Cheesy Curry Risotto: In a pan, cook a few tablespoons of Curried Sun-Dried Tomato until fragrant. Add your risotto rice and mix to coat. Cook the risotto with vegetable broth as per package instructions. When it’s cooked, stir in a few handfuls of grated cheese. Something mild like mozzarella would be ideal, but cheddar would work well too.</p>
+    </div>
+  </div>
+    <div class="so-tab">
+    <input id="so-tab-24" type="checkbox" name="tabs" />
+    <label for="so-tab-24">Gnocchi</label>
+    <div class="so-tab-content">
+      <p>Rocket Curry Gnocchi: Cook gnocchi as per package instructions. In a separate pan, heat a few spoons of Curried Sun-Dried Tomato until fragrant, and as a few spoons of the pasta water to create a sauce, then add the gnocchi and mix to coat. Take the pan off the heat and add a few handfuls of rocket and stir to wilt.</p>
+    </div>
+  </div>
+    <div class="so-tab">
+    <input id="so-tab-25" type="checkbox" name="tabs" />
+    <label for="so-tab-25">Pasta</label>
+    <div class="so-tab-content">
+      <p>Smokey Pasta: Brown a diced onion until softened, and add then add about a quarter cup of Chipotle Garni, a few spoonfuls of honey, and some cream to create a creamy sauce. Add your cooked pasta to coat.</p>
+    </div>
+  </div>
+</div>
+
+<h2>Meat/Poultry/Eggs</h2>
+<div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-26" type="checkbox" name="tabs" />
+    <label for="so-tab-26">Beef (quick cooking cuts, such as skirt and rump steaks – ask your local butcher for more information)</label>
+    <div class="so-tab-content">
+      <p>Beef Fajitas: thinly slice the beef and marinate it in Miso Chipotle or Chipotle Garni for at least half an hour. Cook quickly on high heat and serve over rice or in a wrap with toppings such as sour cream (or Greek yoghurt), salsa (diced onions and tomatoes, with come coriander, salt and limed juice), avocadoes, and some sautéed bell peppers and onions.</p>
+      <br>
+      <p>Beefy Noodles: thinly slice the beef and marinate in Miso Chipotle for at least half an hour. Cook quickly on high heat. Cook your noodles according to package instructions and using the same pan that you cooked the beef in add a few spoons of soy sauce, a minced garlic clove, and a small amount of corn starch slurry to thicken the sauce. Once your sauce is thickened, mix in your noodles to coat and add your beef.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-27" type="checkbox" name="tabs" />
+    <label for="so-tab-27">Beef (slow cooking cuts, such as beef shin, onglet, and chuck – ask your local butcher for more information)</label>
+    <div class="so-tab-content">
+      <p>Barbacoa Tacos: Trim any excess fat from your beef, and, with a bit of oil in the pot, sear the beef to until browned on all sides. Mix a healthy amount of Chipotle Garni (depending on your heat tolerance) with some beef or vegetable broth and use this mixture to top the beef in your pot. Cover and cook on a low heat setting for 8-9 hours (this will depend on how large your cuts of beef are; you’ll know it’s done when the meat is easily pulled apart). Once it’s done, shred the beef and mix with the remaining liquid in the pan, and add a squeeze of citrus juice if you have it. Serve in tacos with sour cream (or Greek yoghurt), sliced radishes, and some cheese.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-28" type="checkbox" name="tabs" />
+    <label for="so-tab-28">Beef (roasting cuts/joints, such as topside, silverside, and brisket – ask your local butcher for more information)</label>
+    <div class="so-tab-content">
+      <p>Miso Glazed Roast: Mix Miso Chipotle with a bit of olive oil and slather all over the joint you’re roasting. Roast as per your butcher’s instructions. This would make a great main alongside roast potatoes, or in a sandwich with a bit of slaw.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-29" type="checkbox" name="tabs" />
+    <label for="so-tab-29">Beef Mince</label>
+    <div class="so-tab-content">
+      <p>Beef Empanadas: You can make these using pizza dough (we like this one) or puff pastry, but if you’re lucky enough to have flour and some extra time, this is a guide on how to make the dough yourself. In a hot pan, sauté some diced onions and a diced green bell pepper until softened, then add your mince and cook through. Add a few tablespoons of Miso Chipotle once the mince is cooked and heat through. Prepare your dough by cutting it into rounds, then add a spoonful of your mince. Make sure you don’t overfill and have at least a small border for you to fold them. Top with cheese if desired, and fold into half circles, crimping the edges with a fork. If desired, brush with some egg yolk, then bake. If using premade dough, follow package instructions on baking.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-30" type="checkbox" name="tabs" />
+    <label for="so-tab-30">Lamb (quick cooking cuts such as lamb chops or fillet – ask your local butcher for more information)</label>
+    <div class="so-tab-content">
+      <p>Smokey Chipotle Chops: Rub lamb chops with a mixture of Chipotle Garni and olive oil, and cook over high heat on both sides, about 8-10 minutes, until a crust forms. This would be great served alongside a salad.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-31" type="checkbox" name="tabs" />
+    <label for="so-tab-31">Lamb (slow cooking cuts such as lamb shank and neck – ask your local butcher for more information)</label>
+    <div class="so-tab-content">
+      <p>Lamb Curry: heat oil on medium-high heat and brown your lamb on all sides. Set aside and in the same pan, add diced onion and sliced carrots until softened. Add a few spoons of Curried Sun-Dried Tomato and cook until fragrant, then add a can of chopped tomatoes and a can of coconut milk, and add the lamb back. Stir to combine, bring to a boil, then set to a simmer for 6 hours (more or less depending on your cut of lamb.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-32" type="checkbox" name="tabs" />
+    <label for="so-tab-32">Lamb (roasting cuts/joints such as lamb shoulder and leg of lamb – ask your local butcher for more information)</label>
+    <div class="so-tab-content">
+      <p>Miso Lamb Shoulder: Mix Miso Chipotle with a bit of olive oil and slather all over the joint you’re roasting. Roast as per your butcher’s instructions. This would make a great main alongside roast carrots, or on a flatbread.</p>
+    </div>
+  </div>
+   <div class="so-tab">
+    <input id="so-tab-33" type="checkbox" name="tabs" />
+    <label for="so-tab-33">Lamb Mince</label>
+    <div class="so-tab-content">
+      <p>Curry Burgers: Mix a few tablespoons of Curried Sun-Dried Tomato into your mince and form into patties and cook. We particularly like making them into smash burgers, as the Curried Sun-Dried Tomato helps add some caramelisation to the crust – instructions here. Top your burger with chutney and minted yoghurt.</p>
+    </div>
+  </div>
+  <div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-34" type="checkbox" name="tabs" />
+    <label for="so-tab-34">Chicken Breasts</label>
+    <div class="so-tab-content">
+      <p>Curry Grilled Chicken: Butterfly your chicken breast and pound to create a think and even piece. Marinate in a mix of Curried Sun-Dried Tomato and lemon juice and cook on a grill pan on medium-high heat. Serve alongside a refreshing salad.</p>
+    </div>
+  </div>
+  <div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-35" type="checkbox" name="tabs" />
+    <label for="so-tab-35">Chicken Thighs</label>
+    <div class="so-tab-content">
+      <p>Crispy Miso Chipotle Chicken: Pat your skin-on chicken thighs dry with a paper towel, then coat with Miso Chipotle and olive oil. Follow package instructions to bake the chicken, skin-side up (don’t flip halfway through; this will ensure the skin is crispy). Serve with a side of steamed greens or roast potatoes.</p>
+    </div>
+  </div>
+  <div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-36" type="checkbox" name="tabs" />
+    <label for="so-tab-36">Chicken Wings</label>
+    <div class="so-tab-content">
+      <p>Chipotle Garni Chicken Wings: So easy, so delicious. Find our full recipe here. You can thank us later.</p>
+    </div>
+  </div>
+  <div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-37" type="checkbox" name="tabs" />
+    <label for="so-tab-37">Eggs</label>
+    <div class="so-tab-content">
+      <p>Easy Shakshouka: This is a really simple recipe we make at home at least twice a week which makes for a great meal on its own or served with some flatbread. Slice an onion and sweat it out in a pan with some salt until soft (but not caramelised). Add a few diced tomatoes and cook until they form a thick sauce. Beat a few eggs, season, and pour over the tomatoes and onion. Cover for a few minutes until the eggs are cooked. Sometimes I like to mix it up and add a few tablespoons of Curried Sun-Dried Tomato when I add the tomatoes.</p>
+    </div>
+  </div>
+</div>
+
+<h2>Fish/Seafood</h2>
+<div class="so-accordion-wrapper">
+  <div class="so-tab">
+    <input id="so-tab-38" type="checkbox" name="tabs" />
+    <label for="so-tab-38">Oily Fish (Such as salmon, trouth and mackerel)</label>
+    <div class="so-tab-content">
+      <p>Miso Glazed Salmon: Slather salmon in Miso Chipotle and cook in a pan or in the oven (according to package instructions), and you’re onto a winner. Really great served over noodles or rice with a side of veg.</p>
+      <br>
+      <p>Creamy Sun-Dried Tomato Salmon: Season your salmon fillet and cook in an oiled pan for 2-3 minutes on each side, then set aside. In the same pan, sauté a diced onion, then add a few heaped tablespoons of Curried Sun-Dried Tomato and cook until fragrant. Add a dash of vegetable stock to reach your desired consistency and simmer. Add a few spoonfuls of cream to form a creamy sauce, and add your salmon back in. This goes extremely well with pasta.</p>
+    </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-39" type="checkbox" name="tabs" />
+    <label for="so-tab-39">Cod, Haddock, and other white fish</label>
+    <div class="so-tab-content">
+      <p>Blackened Cod Tacos: Coat your cod fillets in Chipotle Garni, and on high heat, cook your cod for two minutes on each side. Don’t worry about the black bits forming; that’s what’ll give them the charred flavour we’re after. Serve your taco with spicy mayo (Chipotle Garni + mayo) and a fresh salsa of diced tomatoes, onions, coriander and lime (don’t forget to season with salt!).</p>
+      <br>
+      <p>Cod Ramen: Marinate cod in a mix of Miso Chipotle and grated ginger. In the meantime, cook a portion of soba noodles and set aside. Pan-fry your fish for 2-3 minutes on each side and set aside. In an oiled wok, stir-fry pak choi or any other greens until they start to wilt. Add 250mL of vegetable stock, and season with a small amount of light soy, oyster, and fish sauces (or Miso Chipotle if you haven’t got all that), and heat through. In a bowl, add your noodles, and top with the broth and cod fillet.</p>
+      </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-40" type="checkbox" name="tabs" />
+    <label for="so-tab-40">Prawns and Scallops</label>
+    <div class="so-tab-content">
+      <p>Miso Chipotle Prawn Bowl: quickly pan-fry your prawns with Miso Chipotle. Serve with sautéed courgettes and sliced avocado on a bed of rice.</p>
+      <br>
+      <p>Curried Scallops: Pan fry your scallops (a few minutes on each side should do it. Be careful not to overcook them). Take them off the heat and keep warm. Sautee finely diced onions with Curried Sun-Dried Tomato until soft. Blend the onion mixture until smooth, adding vegetable broth as necessary and a dash of cream. Add back to the pan with the scallops. Serve over pasta or rice.</p>
+      <br>
+      <p>Chipotle Scallops: Pan fry your scallops (a few minutes on each side should do it. Be careful not to overcook them). Take them off the heat and keep warm. In the same pan, add a generous amount of Chipotle Garni and a small amount of orange juice. Mix and reduce to the desired consistency and taste for seasoning. Add the scallops back in to coat, and serve over pasta or rice.</p>
+      </div>
+  </div>
+  <div class="so-tab">
+    <input id="so-tab-41" type="checkbox" name="tabs" />
+    <label for="so-tab-41">Tuna</label>
+    <div class="so-tab-content">
+      <p>Tuna Jacket Potato: Mix a drained can of tuna with a spoonful of Curried Sun-Dried Tomato, some grated carrot, and a tiny bit of mayonnaise. Stuff into a jacket potato, and top with grated cheese and pop into the over until the cheese is melty. This filling would also make for a great tuna melt.</p>
+      </div>
+  </div>
+</div>
